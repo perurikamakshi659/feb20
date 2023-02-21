@@ -1,0 +1,20 @@
+#include<stdio.h>
+main() {
+    int i=1, n, largest, secondLargest, num;
+    printf("Enter the number of inputs: ");
+    scanf("%d", &n);
+    while (i <= n ) {
+        scanf("%d", &num);
+       if(i==1)secondLargest=num; 
+        if (num > largest) {
+            secondLargest = largest;
+            largest = num;
+        } else if (num > secondLargest) {
+            secondLargest = num;
+        }
+        i++;
+    }
+    printf("The second largest number is %d\n", secondLargest);
+    
+   
+}
