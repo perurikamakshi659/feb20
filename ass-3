@@ -11,3 +11,4 @@ if(c==2)
 	printf("Prime number");
 else
 	printf("Not a prime number");
+	}
